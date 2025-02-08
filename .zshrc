@@ -18,6 +18,7 @@ alias gr="grep --color=auto"
 alias hx="helix"
 alias pa="paru"
 alias ff="fastfetch"
+alias dm="yadm"
 
 export ALL_PROXY=socks5://127.0.0.1:7897
 
