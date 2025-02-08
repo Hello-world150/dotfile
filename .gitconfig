@@ -1,0 +1,12 @@
+[core]
+	editor = helix
+[user]
+	email = qhl314159265@126.com
+	name = Haolin Qin
+	signingkey = 945ABE5D9DEAE715
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+[push]
+	autoSetupRemote = true
