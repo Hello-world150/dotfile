@@ -1,0 +1,1 @@
+use-grammars = { only = ["rust", "toml", "bash", "hyprlang", "markdown"] }
