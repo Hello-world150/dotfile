@@ -19,7 +19,7 @@ window#waybar {
 #workspaces button {
   padding: 3px 6px;
   margin: 6px 3px;
-  border-radius: 4px;
+  border-radius: 3px;
   background-color: #1e1e2e;
   color: #cdd6f4;
 }
@@ -44,7 +44,7 @@ window#waybar {
 #wireplumber,
 #clock,
 #tray {
-  border-radius: 4px;
+  border-radius: 3px;
   margin: 6px 3px;
   padding: 6px 12px;
   color: #181825;
