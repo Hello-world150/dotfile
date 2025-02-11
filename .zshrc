@@ -20,7 +20,7 @@ alias pa="paru"
 alias ff="fastfetch"
 alias dm="yadm"
 
-# export ALL_PROXY=socks5://127.0.0.1:7897
+export ALL_PROXY=socks5://127.0.0.1:7897
 
 # pnpm
 export PNPM_HOME="/home/qhlcmy/.local/share/pnpm"
