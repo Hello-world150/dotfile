@@ -8,8 +8,6 @@
 
 window#waybar {
   background-color: #1e1e2e;
-  transition-property: background-color;
-  transition-duration: 0.5s;
 }
 
 #workspaces {
@@ -34,24 +32,20 @@ window#waybar {
   background-color: #cdd6f4;
 }
 
-#clock {
-  background-color: #cba6f7;
-}
 
+#clock,
+#tray,
 #memory,
 #battery,
-#backlight,
-#wireplumber,
-#clock,
-#tray {
+#wireplumber {
   border-radius: 3px;
   margin: 6px 3px;
-  padding: 6px 12px;
-  color: #181825;
+  padding: 6px 10px;
+  color: #1e1e2e;
 }
 
-#backlight{
-    background-color: #1e1e2e;
+#clock {
+  background-color: #cba6f7;
 }
 
 #memory {
@@ -68,5 +62,4 @@ window#waybar {
 
 #battery.charging {
   background-color: #a6e3a1;
-  color: #181825;
 }

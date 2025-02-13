@@ -20,6 +20,9 @@ alias pa="paru"
 alias ff="fastfetch"
 alias dm="yadm"
 
+alias up="sudo cpupower -c all frequency-set --governor performance"
+alias down="sudo cpupower -c all frequency-set --governor powersave"
+
 export ALL_PROXY=socks5://127.0.0.1:7897
 
 # pnpm
