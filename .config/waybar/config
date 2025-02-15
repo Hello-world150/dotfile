@@ -23,24 +23,20 @@
     },
     "memory": {
         "interval": 3,
-        "format": "M {used}",
+        "format": "{used}",
         "tooltip": false,
     },
     "tray": {
         "spacing": 7,
     },
     "wireplumber": {
-        "format": "V {volume}",
+        "format": "{volume}",
         "scroll-step": 1,
         "tooltip": false,
     },
     "battery": {
-        "format": "B {capacity}",
+        "format": "{capacity}",
         "interval": 3,
-        "states": {
-            "warning": 30,
-            "critical": 10,
-        },
         "tooltip": false,
     },
 }
