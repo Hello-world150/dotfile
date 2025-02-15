@@ -15,11 +15,11 @@ window#waybar {
 }
 
 #workspaces button {
-  padding: 3px 6px;
-  margin: 6px 3px;
+  padding: 3px 5px;
+  margin: 4px 3px;
   border-radius: 3px;
-  background-color: #1e1e2e;
   color: #cdd6f4;
+  background-color: #1e1e2e;
 }
 
 #workspaces button.active {
@@ -38,28 +38,27 @@ window#waybar {
 #memory,
 #battery,
 #wireplumber {
-  border-radius: 3px;
   margin: 6px 3px;
-  padding: 6px 10px;
-  color: #1e1e2e;
+  padding: 3px 5px;
+  background-color: transparent;
 }
 
 #clock {
-  background-color: #cba6f7;
+  color: #89b4fa;
 }
 
 #memory {
-  background-color: #fab387;
+  color: #a6e3a1;
 }
 
 #wireplumber {
-  background-color: #f9e2af;
+  color: #f9e2af;
 }
 
 #battery {
-  background-color: #f38ba8;
+  color: #f38ba8;
 }
 
 #battery.charging {
-  background-color: #a6e3a1;
+  color: #a6e3a1;
 }
