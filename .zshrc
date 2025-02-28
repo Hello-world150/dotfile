@@ -19,14 +19,3 @@ alias hx="helix"
 alias pa="paru"
 alias ff="fastfetch"
 alias dm="yadm"
-
-alias up="sudo cpupower -c all frequency-set --governor performance"
-alias down="sudo cpupower -c all frequency-set --governor powersave"
-
-# pnpm
-export PNPM_HOME="/home/qhlcmy/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
