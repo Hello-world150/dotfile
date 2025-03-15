@@ -13,7 +13,7 @@ PROMPT="%F{blue}%2~%f %F{red}%#%f "
 
 alias ls="ls --color=auto"
 alias la="ls -a --color=auto"
-alias ll="ls -l --color=auto"
+alias ll="ls -lh --color=auto"
 alias gr="grep --color=auto"
 alias hx="helix"
 alias pa="paru"
