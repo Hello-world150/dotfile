@@ -1,13 +1,27 @@
 {
 	"name": "Vimium C",
-	"@time": "2025/4/13 14:24:02",
-	"time": 1744525442345,
+	"@time": "2025/4/13 14:29:59",
+	"time": 1744525799789,
 	"environment": {
 		"extension": "1.99.997",
 		"platform": "linux",
 		"firefox": 138
 	},
 	"keyLayout": 2,
+	"keyMappings": [
+		"#!no-check",
+		"unmap J",
+		"unmap K",
+		"unmap G",
+		"unmap o",
+		"unmap O",
+		"map J nextTab",
+		"map K previousTab",
+		"map ge scrollToBottom",
+		"map o Vomnibar.activateInNewTab",
+		"map O Vomnibar.activate",
+		""
+	],
 	"scrollStepSize": 200,
 	"searchEngines": [
 		"b: https://www.bing.com/search?q=$s",
