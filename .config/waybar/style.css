@@ -1,46 +1,31 @@
 * {
-  border: none;
-  border-radius: 0;
-  min-height: 0;
   font-family: FiraCode Nerd Font;
-  font-size: 13px;
+  font-size: 14px;
+  background: transparent;
 }
 
-window#waybar {
-  background-color: transparent;
-}
-
-#workspaces {
-  background-color: transparent;
+#waybar {
+  background-color: rgba(24, 24, 37, 0.60);
+  border-bottom: 1px solid #11111b;
+  margin: 5px;
+  padding: 4px 10px;
 }
 
 #workspaces button {
-  padding: 3px 5px;
-  margin: 4px 3px;
   border-radius: 3px;
-  color: #cdd6f4;
-  background-color: #1e1e2e;
 }
 
 #workspaces button.active {
-  color: #1e1e2e;
-  background-color: #cdd6f4;
+  color: #fab387;
 }
-
-#workspaces button:hover {
-  color: #1e1e2e;
-  background-color: #cdd6f4;
-}
-
 
 #clock,
 #tray,
 #memory,
-#battery,
-#wireplumber {
+#wireplumber,
+#battery {
   margin: 6px 3px;
   padding: 3px 5px;
-  background-color: transparent;
 }
 
 #clock {
