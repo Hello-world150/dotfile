@@ -2,17 +2,18 @@
   font-family: FiraCode Nerd Font;
   font-size: 14px;
   background: transparent;
+  border-radius: 3px;
+}
+
+tooltip * {
+  background: rgba(24, 24, 37, 0.85);
 }
 
 #waybar {
-  background-color: rgba(24, 24, 37, 0.60);
-  border-bottom: 1px solid #11111b;
+  background: rgba(24, 24, 37, 0.45);
+  border-bottom: 0.5px solid rgb(17, 17, 27);
   margin: 5px;
   padding: 4px 10px;
-}
-
-#workspaces button {
-  border-radius: 3px;
 }
 
 #workspaces button.active {
@@ -30,6 +31,10 @@
 
 #clock {
   color: #89b4fa;
+}
+
+#tray window {
+  background: rgba(24, 24, 37, 0.80);
 }
 
 #memory {
