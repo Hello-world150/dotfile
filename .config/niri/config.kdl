@@ -67,9 +67,9 @@ layout {
     focus-ring {
         // off
         width 2
-        active-color "#7fc8ff"
-        inactive-color "#505050"
+        active-color "#89b4fa"
     }
+    background-color "transparent"
     border {
         off
         width 4
@@ -106,6 +106,15 @@ animations {
     // off
     // slowdown 3.0
 
+}
+overview {
+    workspace-shadow {
+        off
+    }
+}
+layer-rule {
+    match namespace="^wallpaper$"
+    place-within-backdrop true
 }
 window-rule {
     geometry-corner-radius 6
