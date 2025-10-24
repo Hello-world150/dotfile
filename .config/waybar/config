@@ -3,7 +3,7 @@
     "position": "top",
     "spacing": 0,
     "modules-left": [
-        "hyprland/workspaces",
+        "niri/workspaces",
     ],
     "modules-center": [
         "clock",

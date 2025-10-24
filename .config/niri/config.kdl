@@ -1,0 +1,299 @@
+prefer-no-csd
+screenshot-path "~/Pictures/Screenshots/Screenshot-%Y-%m-%d %H-%M-%S.png"
+input {
+    keyboard {
+        repeat-rate 125
+        repeat-delay 370
+    }
+    touchpad {
+        off
+        // tap
+        // dwt
+        // dwtp
+        // drag false
+        // drag-lock
+        // natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "two-finger"
+        // disabled-on-external-mouse
+    }
+    mouse {
+        // off
+        // natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "no-scroll"
+
+    }
+    trackpoint {
+        off
+        // natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "on-button-down"
+        // scroll-button 273
+        // scroll-button-lock
+        // middle-emulation
+    }
+    focus-follows-mouse max-scroll-amount="0%"
+}
+output "eDP-1" {
+    // off
+    mode "2560x1600@120.00600"
+    scale 1.6
+    transform "normal"
+    variable-refresh-rate on-demand=true
+}
+layout {
+    gaps 16
+    // - "never", default behavior, focusing an off-screen column will keep at the left
+    //   or right edge of the screen.
+    // - "always", the focused column will always be centered.
+    // - "on-overflow", focusing a column will center it if it doesn't fit
+    //   together with the previously focused column.
+    center-focused-column "never"
+    preset-column-widths {
+        // Proportion sets the width as a fraction of the output width, taking gaps into account.
+        // For example, you can perfectly fit four windows sized "proportion 0.25" on an output.
+        // The default preset widths are 1/3, 1/2 and 2/3 of the output.
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+    default-column-width {
+        proportion 0.5
+    }
+    focus-ring {
+        // off
+        width 2
+        active-color "#7fc8ff"
+        inactive-color "#505050"
+    }
+    border {
+        off
+        width 4
+        active-color "#ffc87f"
+        inactive-color "#505050"
+        urgent-color "#9b0000"
+    }
+    shadow {
+        // on
+        // draw-behind-window true
+        // Softness controls the shadow blur radius.
+        softness 30
+        // Spread expands the shadow.
+        spread 5
+        // Offset moves the shadow relative to the window.
+        offset x=0 y=5
+        // You can also change the shadow color and opacity.
+        color "#0007"
+    }
+    struts {
+        // left 64
+        // right 64
+        // top 64
+        // bottom 64
+
+    }
+}
+// spawn-at-startup "something"
+// spawn-sh-at-startup "something"
+hotkey-overlay {
+    skip-at-startup
+}
+animations {
+    // off
+    // slowdown 3.0
+
+}
+window-rule {
+    geometry-corner-radius 6
+    clip-to-geometry true
+}
+window-rule {
+    match app-id="firefox$" title="^Picture-in-Picture$"
+    open-floating true
+}
+binds {
+    Mod+T hotkey-overlay-title="Kitty" {
+        spawn "kitty"
+    }
+    Mod+A hotkey-overlay-title="Tofi" {
+        spawn-sh "tofi-drun | xargs niri msg action spawn --"
+    }
+    Mod+B hotkey-overlay-title="Firefox" {
+        spawn "firefox"
+    }
+    XF86AudioRaiseVolume allow-when-locked=true {
+        spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+"
+    }
+    XF86AudioLowerVolume allow-when-locked=true {
+        spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-"
+    }
+    XF86AudioMute allow-when-locked=true {
+        spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    }
+    XF86AudioMicMute allow-when-locked=true {
+        spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+    }
+    XF86MonBrightnessUp allow-when-locked=true {
+        spawn "brightnessctl" "--class=backlight" "set" "+10%"
+    }
+    XF86MonBrightnessDown allow-when-locked=true {
+        spawn "brightnessctl" "--class=backlight" "set" "10%-"
+    }
+    Mod+O repeat=false {
+        toggle-overview
+    }
+    Mod+Q repeat=false {
+        close-window
+    }
+    Mod+H {
+        focus-column-left
+    }
+    Mod+J {
+        focus-window-down
+    }
+    Mod+K {
+        focus-window-up
+    }
+    Mod+L {
+        focus-column-right
+    }
+    Mod+Alt+H {
+        move-column-left
+    }
+    Mod+Alt+J {
+        move-window-down
+    }
+    Mod+Alt+K {
+        move-window-up
+    }
+    Mod+Alt+L {
+        move-column-right
+    }
+    Mod+Shift+J {
+        move-column-to-workspace-down
+    }
+    Mod+Shift+K {
+        move-column-to-workspace-up
+    }
+    Mod+1 {
+        focus-workspace 1
+    }
+    Mod+2 {
+        focus-workspace 2
+    }
+    Mod+3 {
+        focus-workspace 3
+    }
+    Mod+4 {
+        focus-workspace 4
+    }
+    Mod+5 {
+        focus-workspace 5
+    }
+    Mod+6 {
+        focus-workspace 6
+    }
+    Mod+7 {
+        focus-workspace 7
+    }
+    Mod+8 {
+        focus-workspace 8
+    }
+    Mod+9 {
+        focus-workspace 9
+    }
+    Mod+Shift+1 {
+        move-column-to-workspace 1
+    }
+    Mod+Shift+2 {
+        move-column-to-workspace 2
+    }
+    Mod+Shift+3 {
+        move-column-to-workspace 3
+    }
+    Mod+Shift+4 {
+        move-column-to-workspace 4
+    }
+    Mod+Shift+5 {
+        move-column-to-workspace 5
+    }
+    Mod+Shift+6 {
+        move-column-to-workspace 6
+    }
+    Mod+Shift+7 {
+        move-column-to-workspace 7
+    }
+    Mod+Shift+8 {
+        move-column-to-workspace 8
+    }
+    Mod+Shift+9 {
+        move-column-to-workspace 9
+    }
+    Mod+BracketLeft {
+        consume-or-expel-window-left
+    }
+    Mod+BracketRight {
+        consume-or-expel-window-right
+    }
+    Mod+Comma {
+        consume-window-into-column
+    }
+    Mod+Period {
+        expel-window-from-column
+    }
+    Mod+R {
+        switch-preset-column-width
+    }
+    Mod+Shift+R {
+        switch-preset-window-height
+    }
+    Mod+Ctrl+R {
+        reset-window-height
+    }
+    Mod+F {
+        fullscreen-window
+    }
+    Mod+Alt+F {
+        maximize-column
+    }
+    Mod+C {
+        center-column
+    }
+    Mod+Shift+Minus {
+        set-window-height "-10%"
+    }
+    Mod+Shift+Equal {
+        set-window-height "+10%"
+    }
+    Mod+V {
+        toggle-window-floating
+    }
+    Mod+Shift+V {
+        switch-focus-between-floating-and-tiling
+    }
+    Mod+W {
+        toggle-column-tabbed-display
+    }
+    Print {
+        screenshot
+    }
+    Ctrl+Print {
+        screenshot-screen
+    }
+    Alt+Print {
+        screenshot-window
+    }
+    Mod+Escape allow-inhibiting=false {
+        toggle-keyboard-shortcuts-inhibit
+    }
+    Mod+Shift+Delete {
+        quit
+    }
+    Mod+Shift+P {
+        power-off-monitors
+    }
+}

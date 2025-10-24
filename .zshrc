@@ -23,5 +23,3 @@ SAVEHIST=100
 
 unsetopt beep
 setopt HIST_IGNORE_DUPS
-
-export PATH=~/.ghcup/bin:$PATH
