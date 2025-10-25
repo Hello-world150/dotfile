@@ -1,5 +1,8 @@
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot-%Y-%m-%d %H-%M-%S.png"
+cursor {
+    hide-after-inactive-ms 1000
+}
 input {
     keyboard {
         repeat-rate 125
@@ -66,7 +69,7 @@ layout {
     }
     focus-ring {
         // off
-        width 2
+        width 1
         active-color "#89b4fa"
     }
     background-color "transparent"
@@ -147,10 +150,10 @@ binds {
         spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
     }
     XF86MonBrightnessUp allow-when-locked=true {
-        spawn "brightnessctl" "--class=backlight" "set" "+10%"
+        spawn "brightnessctl" "set" "5%+"
     }
     XF86MonBrightnessDown allow-when-locked=true {
-        spawn "brightnessctl" "--class=backlight" "set" "10%-"
+        spawn "brightnessctl" "set" "5%-"
     }
     Mod+O repeat=false {
         toggle-overview
