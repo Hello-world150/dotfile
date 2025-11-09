@@ -39,7 +39,7 @@ input {
         // scroll-button-lock
         // middle-emulation
     }
-    focus-follows-mouse max-scroll-amount="0%"
+    focus-follows-mouse
 }
 output "eDP-1" {
     // off
@@ -68,7 +68,6 @@ layout {
         proportion 0.5
     }
     focus-ring {
-        // off
         width 1
         active-color "#89b4fa"
     }
@@ -92,13 +91,6 @@ layout {
         // You can also change the shadow color and opacity.
         color "#0007"
     }
-    struts {
-        // left 64
-        // right 64
-        // top 64
-        // bottom 64
-
-    }
 }
 // spawn-at-startup "something"
 // spawn-sh-at-startup "something"
@@ -106,8 +98,7 @@ hotkey-overlay {
     skip-at-startup
 }
 animations {
-    // off
-    // slowdown 3.0
+    slowdown 0.7
 
 }
 overview {
@@ -124,17 +115,25 @@ window-rule {
     clip-to-geometry true
 }
 window-rule {
+    match app-id="firefox$"
+    open-maximized true
+}
+window-rule {
     match app-id="firefox$" title="^Picture-in-Picture$"
     open-floating true
 }
+window-rule {
+    match app-id="electron-netease-cloud-music$"
+    open-maximized true
+}
 binds {
-    Mod+T hotkey-overlay-title="Kitty" {
+    Mod+T hotkey-overlay-title="Kitty" repeat=false {
         spawn "kitty"
     }
-    Mod+A hotkey-overlay-title="Tofi" {
+    Mod+A hotkey-overlay-title="Tofi" repeat=false {
         spawn-sh "tofi-drun | xargs niri msg action spawn --"
     }
-    Mod+B hotkey-overlay-title="Firefox" {
+    Mod+B hotkey-overlay-title="Firefox" repeat=false {
         spawn "firefox"
     }
     XF86AudioRaiseVolume allow-when-locked=true {
