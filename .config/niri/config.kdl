@@ -1,5 +1,5 @@
 prefer-no-csd
-screenshot-path "~/Pictures/Screenshots/Screenshot-%Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/Pictures/Screenshots/Screenshot-%Y-%m-%d-%H-%M-%S.png"
 cursor {
     hide-after-inactive-ms 1000
 }
