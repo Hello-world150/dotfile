@@ -49,7 +49,7 @@ output "eDP-1" {
     variable-refresh-rate on-demand=true
 }
 layout {
-    gaps 16
+    gaps 0
     // - "never", default behavior, focusing an off-screen column will keep at the left
     //   or right edge of the screen.
     // - "always", the focused column will always be centered.
@@ -68,16 +68,17 @@ layout {
         proportion 0.5
     }
     focus-ring {
+        off
         width 1
         active-color "#89b4fa"
     }
     background-color "transparent"
     border {
-        off
-        width 4
-        active-color "#ffc87f"
-        inactive-color "#505050"
-        urgent-color "#9b0000"
+        // off
+        width 1
+        active-color "#89b4fa"
+        // inactive-color "#505050"
+        // urgent-color "#9b0000"
     }
     shadow {
         // on
@@ -99,7 +100,6 @@ hotkey-overlay {
 }
 animations {
     slowdown 0.7
-
 }
 overview {
     workspace-shadow {
@@ -111,8 +111,13 @@ layer-rule {
     place-within-backdrop true
 }
 window-rule {
-    geometry-corner-radius 6
+    geometry-corner-radius 0
     clip-to-geometry true
+    opacity 0.97
+}
+window-rule {
+    match app-id="code$"
+    open-maximized true
 }
 window-rule {
     match app-id="firefox$"
@@ -123,8 +128,8 @@ window-rule {
     open-floating true
 }
 window-rule {
-    match app-id="electron-netease-cloud-music$"
-    open-maximized true
+    match app-id="Pinentry-gtk$"
+    open-floating true
 }
 binds {
     Mod+T hotkey-overlay-title="Kitty" repeat=false {

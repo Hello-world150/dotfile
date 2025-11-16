@@ -2,11 +2,10 @@
   font-family: FiraCode Nerd Font;
   font-size: 14px;
   background: transparent;
-  border-radius: 3px;
 }
 
 tooltip * {
-  background: rgba(24, 24, 37, 0.85);
+  background: rgba(24, 24, 37, 1);
 }
 
 #waybar {
@@ -33,7 +32,7 @@ tooltip * {
 }
 
 #tray window {
-  background: rgba(24, 24, 37, 0.80);
+  background: rgba(24, 24, 37, 1);
 }
 
 #memory {
