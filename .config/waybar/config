@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "position": "top",
+    "position": "bottom",
     "spacing": 0,
     "modules-left": [
         "niri/workspaces",
@@ -14,7 +14,7 @@
         "wireplumber",
         "battery",
     ],
-    "hyprland/workspaces": {
+    "niri/workspaces": {
         "on-click": "activate",
     },
     "clock": {

@@ -44,7 +44,7 @@ input {
 output "eDP-1" {
     // off
     mode "2560x1600@120.00600"
-    scale 1.6
+    scale 1.5
     transform "normal"
     variable-refresh-rate on-demand=true
 }
