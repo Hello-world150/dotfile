@@ -3,6 +3,9 @@ screenshot-path "~/Pictures/Screenshots/Screenshot-%Y-%m-%d-%H-%M-%S.png"
 cursor {
     hide-after-inactive-ms 1000
 }
+environment {
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+}
 input {
     keyboard {
         repeat-rate 125
