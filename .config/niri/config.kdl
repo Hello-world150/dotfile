@@ -102,8 +102,7 @@ hotkey-overlay {
     skip-at-startup
 }
 animations {
-    off
-    slowdown 0.7
+    slowdown 0.5
 }
 overview {
     workspace-shadow {

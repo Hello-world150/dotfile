@@ -1,4 +1,4 @@
-PROMPT="%F{blue}%2~%f %F{red}λ%f "
+PROMPT="%F{blue}%2~%f %F{red}%#%f "
 
 alias ls="ls --color=auto"
 alias la="ls -a --color=auto"
