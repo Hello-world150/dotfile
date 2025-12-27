@@ -8,6 +8,7 @@ alias hx="helix"
 alias pa="paru"
 alias ff="fastfetch"
 alias dm="yadm"
+alias ns="niri-session"
 
 zstyle :compinstall filename '/home/qhlcmy/.zshrc'
 zstyle ':completion:*' rehash true
