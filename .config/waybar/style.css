@@ -1,22 +1,23 @@
 * {
   font-family: FiraCode Nerd Font;
   font-size: 14px;
+  font-weight: bold;
   background: transparent;
   border-radius: 0px;
 }
 
 tooltip * {
-  background: rgba(24, 24, 37, 1);
+  background: #181825;
 }
 
 #waybar {
-  background: rgba(24, 24, 37, 1);
+  background: #181825;
   margin: 5px;
   padding: 4px 10px;
 }
 
 #workspaces button.active {
-  color: #f38ba8;
+  color: #89b4fa;
 }
 
 #clock,
@@ -29,11 +30,11 @@ tooltip * {
 }
 
 #clock {
-  color: #89b4fa;
+  color: #fab387;
 }
 
 #tray window {
-  background: rgba(24, 24, 37, 1);
+  background: #181825;
 }
 
 #memory {
