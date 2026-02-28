@@ -61,20 +61,14 @@ layout {
     center-focused-column "never"
     preset-column-widths {
         // Proportion sets the width as a fraction of the output width, taking gaps into account.
-        // For example, you can perfectly fit four windows sized "proportion 0.25" on an output.
-        // The default preset widths are 1/3, 1/2 and 2/3 of the output.
-        proportion 0.25
         proportion 0.5
-        proportion 0.75
         proportion 1.0
     }
     default-column-width {
         proportion 0.5
     }
     preset-window-heights {
-        proportion 0.25
         proportion 0.5
-        proportion 0.75
         proportion 1.0
     }
     focus-ring {
@@ -109,17 +103,18 @@ hotkey-overlay {
     skip-at-startup
 }
 animations {
-    off
+    // off
+    workspace-switch {
+        duration-ms 300
+        curve "ease-out-expo"
+    }
     slowdown 0.5
 }
 overview {
+    backdrop-color "#181825"
     workspace-shadow {
         off
     }
-}
-layer-rule {
-    match namespace="^wallpaper$"
-    place-within-backdrop true
 }
 window-rule {
     geometry-corner-radius 0
@@ -130,7 +125,7 @@ window-rule {
     open-maximized true
 }
 window-rule {
-    match app-id="firefox$"
+    match app-id="chromium$"
     open-maximized true
 }
 window-rule {
@@ -141,18 +136,19 @@ window-rule {
     match app-id="Pinentry-gtk$"
     open-floating true
 }
+window-rule {
+    match app-id="^steam.*"
+    open-floating true
+}
 binds {
-    Mod+T hotkey-overlay-title="Kitty" repeat=false {
-        spawn "kitty"
+    Mod+T hotkey-overlay-title="Foot" repeat=false {
+        spawn "foot"
     }
     Mod+A hotkey-overlay-title="Tofi" repeat=false {
         spawn-sh "tofi-drun | xargs niri msg action spawn --"
     }
-    Mod+B hotkey-overlay-title="Firefox" repeat=false {
-        spawn "firefox"
-    }
-    Mod+E hotkey-overlay-title="Lf" repeat=false {
-        spawn-sh "niri msg action spawn -- kitty lf"
+    Mod+B hotkey-overlay-title="Chromium" repeat=false {
+        spawn "chromium"
     }
     XF86AudioRaiseVolume allow-when-locked=true {
         spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+"
