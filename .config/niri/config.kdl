@@ -147,8 +147,8 @@ binds {
     Mod+A hotkey-overlay-title="Tofi" repeat=false {
         spawn-sh "tofi-drun | xargs niri msg action spawn --"
     }
-    Mod+B hotkey-overlay-title="Chromium" repeat=false {
-        spawn "chromium"
+    Mod+B hotkey-overlay-title="Chrome" repeat=false {
+        spawn "flatpak run com.google.Chrome"
     }
     XF86AudioRaiseVolume allow-when-locked=true {
         spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+"
