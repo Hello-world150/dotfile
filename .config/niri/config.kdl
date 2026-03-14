@@ -125,12 +125,8 @@ window-rule {
     open-maximized true
 }
 window-rule {
-    match app-id="chromium$"
+    match app-id="google-chrome$"
     open-maximized true
-}
-window-rule {
-    match app-id="firefox$" title="^Picture-in-Picture$"
-    open-floating true
 }
 window-rule {
     match app-id="Pinentry-gtk$"
@@ -148,7 +144,7 @@ binds {
         spawn-sh "tofi-drun | xargs niri msg action spawn --"
     }
     Mod+B hotkey-overlay-title="Chrome" repeat=false {
-        spawn "flatpak run com.google.Chrome"
+        spawn "google-chrome-stable"
     }
     XF86AudioRaiseVolume allow-when-locked=true {
         spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+"
