@@ -9,6 +9,7 @@ alias pa="paru"
 alias ff="fastfetch"
 alias dm="yadm"
 alias ns="niri-session > /dev/null 2>&1"
+alias sudo='sudo '
 
 zstyle :compinstall filename '/home/qhlcmy/.zshrc'
 zstyle ':completion:*' rehash true

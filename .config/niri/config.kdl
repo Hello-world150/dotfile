@@ -13,39 +13,16 @@ input {
     }
     touchpad {
         off
-        // tap
-        // dwt
-        // dwtp
-        // drag false
-        // drag-lock
-        // natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "two-finger"
-        // disabled-on-external-mouse
     }
     mouse {
-        // off
-        // natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "no-scroll"
 
     }
     trackpoint {
         off
-        // natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "on-button-down"
-        // scroll-button 273
-        // scroll-button-lock
-        // middle-emulation
     }
     focus-follows-mouse
 }
 output "eDP-1" {
-    // off
     mode "2560x1600@120.00600"
     scale 1.5
     transform "normal"
@@ -53,14 +30,8 @@ output "eDP-1" {
 }
 layout {
     gaps 0
-    // - "never", default behavior, focusing an off-screen column will keep at the left
-    //   or right edge of the screen.
-    // - "always", the focused column will always be centered.
-    // - "on-overflow", focusing a column will center it if it doesn't fit
-    //   together with the previously focused column.
     center-focused-column "never"
     preset-column-widths {
-        // Proportion sets the width as a fraction of the output width, taking gaps into account.
         proportion 0.5
         proportion 1.0
     }
@@ -78,32 +49,21 @@ layout {
     }
     background-color "transparent"
     border {
-        // off
         width 1
-        active-color "#89b4fa"
-        // inactive-color "#505050"
-        // urgent-color "#9b0000"
+        active-color "#fab387"
+        inactive-color "#11111b"
     }
     shadow {
-        // on
-        // draw-behind-window true
-        // Softness controls the shadow blur radius.
         softness 30
-        // Spread expands the shadow.
         spread 5
-        // Offset moves the shadow relative to the window.
         offset x=0 y=5
-        // You can also change the shadow color and opacity.
         color "#0007"
     }
 }
-// spawn-at-startup "something"
-// spawn-sh-at-startup "something"
 hotkey-overlay {
     skip-at-startup
 }
 animations {
-    // off
     workspace-switch {
         duration-ms 300
         curve "ease-out-expo"
